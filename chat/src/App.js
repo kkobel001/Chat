@@ -1,15 +1,13 @@
-import './App.css';
-import { ChakraProvider } from '@chakra-ui/react'
+import ToggleButtonMode from "./components/atom/ToggleButtonMode/ToggleButtonMode";
+
 
 function App() {
   return (
-    <ChakraProvider>
     <div className="App">
       <header className="App-header">
-      
+      <ToggleButtonMode />
       </header>
     </div>
-    </ChakraProvider>
   );
 }
 
