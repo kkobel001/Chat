@@ -2,15 +2,20 @@
   "name": "sockets_project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemmon index.js -e js,json"
+    "start": "nodemmon server",
+    "dev": "nodemmon server"
   },
   "author": "Katarzyna Kobel",
   "license": "ISC",
   "dependencies": {
+    "@chakra-ui/react": "^2.4.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "express": "^4.18.2",
+    "framer-motion": "^6.5.1",
     "socket.io": "^4.5.4"
   },
   "devDependencies": {
