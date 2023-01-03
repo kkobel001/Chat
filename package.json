@@ -2,11 +2,11 @@
   "name": "sockets_project",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemmon server",
-    "dev": "nodemmon server"
+    "start": "node server",
+    "dev": "nodemon server/server"
   },
   "author": "Katarzyna Kobel",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "socket.io": "^4.5.4"
   },
   "devDependencies": {
+    "dotenv": "^16.0.3",
     "nodemon": "^2.0.20"
   }
 }
