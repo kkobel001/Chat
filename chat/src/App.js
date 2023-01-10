@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import ToggleButtonMode from "./components/atom/ToggleButtonMode/ToggleButtonMode";
 
 
-function App() {
+const App = ()=> {
   const [backendData, setBackendData] = useState(null);
 
   useEffect(()=>{
@@ -18,17 +18,15 @@ function App() {
   },[])
 
   return (
-    console.log(backendData)
-    //  backendData ? (
-    //   <div className="App">
-    //     <header className="App-header">
-    //       {/* <ToggleButtonMode /> */}
-    //       <h2>cos tam</h2>
-    //     </header>
-    // </div>
-    // ) : (<div>Loading</div>)
+    backendData ? (
+    <div className="App">
+      <header className="App-header">
+        {/* <ToggleButtonMode /> */}
+        <h2>cos tam</h2>
+      </header>
+    </div>
+    ) : (<div>Loading</div>)
   )
-
 }
 
 export default App;
