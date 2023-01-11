@@ -1,5 +1,8 @@
 import {useState, useEffect} from 'react';
 import ToggleButtonMode from "./components/atom/ToggleButtonMode/ToggleButtonMode";
+import { BrowserRouter as Router } from 'react-router-dom';
+import Nav from './components/molecules/Nav/Nav';
+
 
 
 const App = ()=> {
@@ -18,14 +21,10 @@ const App = ()=> {
   },[])
 
   return (
-    backendData ? (
-    <div className="App">
-      <header className="App-header">
-        {/* <ToggleButtonMode /> */}
-        <h2>cos tam</h2>
-      </header>
-    </div>
-    ) : (<div>Loading</div>)
+    <Router>
+      <Nav title="Chat" source="git" />
+    </Router>
+   
   )
 }
 
