@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import ToggleButtonMode from "./components/atom/ToggleButtonMode/ToggleButtonMode";
 import { BrowserRouter as Router } from 'react-router-dom';
 import Nav from './components/molecules/Nav/Nav';
+import "./App.css";
 
 
 
@@ -23,6 +24,9 @@ const App = ()=> {
   return (
     <Router>
       <Nav title="Chat" source="git" />
+      <h1 className="text-3xl font-bold underline bg-red-700">
+        hello everybody
+      </h1>
     </Router>
    
   )

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Nav.scss';
+// import './Nav.scss';
 
 type PropsNav = {
     title: string;
@@ -9,10 +9,19 @@ type PropsNav = {
 
 const Nav: React.FC<PropsNav> = ({ source, title }) => {
     return (
-        <ul className="nav">
-            <li className='nav-item'>{title}</li>
-            <li className='nav-item'>{source}</li>
-        </ul>
+        <div className="min-h-full">
+            <nav className="bg-gray-800">
+                <div className="hidden md:block">
+                    <div className="ml-10 flex items-baseline space-x-4">
+                        <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{title}</a>
+                        <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{source}</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
 
     )
 
