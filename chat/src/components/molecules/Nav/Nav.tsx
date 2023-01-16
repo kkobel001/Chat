@@ -1,5 +1,4 @@
 import React from 'react';
-// import './Nav.scss';
 
 type PropsNav = {
     title: string;
@@ -9,7 +8,7 @@ type PropsNav = {
 
 const Nav: React.FC<PropsNav> = ({ source, title }) => {
     return (
-        <div className="min-h-full">
+        <div className="nav bg-gray-800">
             <nav className="bg-gray-800">
                 <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-4">

@@ -23,6 +23,7 @@
     "noImplicitAny": false
   },
   "include": [
-    "src"
+    "src",
+    "tailwind.config.js"
   ]
 }
