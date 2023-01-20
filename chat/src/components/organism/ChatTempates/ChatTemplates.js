@@ -25,7 +25,6 @@ import {
             Barcelona.
           </Typography>
         </CardBody>
-   
     </Card>
   );
 }

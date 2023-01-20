@@ -109,9 +109,9 @@ export default function Chat() {
       </div>
       <MobileNav open={openNav}>
         {navList}
-        <Button variant="gradient" size="sm" fullWidth className="mb-2">
-          <span>GITHUB</span>
-        </Button>
+          <Button variant="gradient" size="sm" fullWidth className="mb-2">
+            <span>GITHUB</span>
+          </Button>
       </MobileNav>
       <div class="border-b-2 py-4 px-2">
           <input
