@@ -26,7 +26,7 @@ export const Friends =[
 },
 {
     id:1,
-    firstletter:'K',
+    firstletter:'B',
     name: 'Kasia Kobe'
 },
 {

@@ -3,7 +3,6 @@ import ToggleButtonMode from "./components/atom/ToggleButtonMode/ToggleButtonMod
 import { BrowserRouter as Router } from 'react-router-dom';
 import Nav from './components/molecules/Nav/Nav';
 import "./App.css";
-import Chat from 'components/molecules/Chat/Chat';
 import ChatTemplates from 'components/organism/ChatTempates/ChatTemplates';
 
 
@@ -26,11 +25,7 @@ const App = ()=> {
 
   return (
     <Router>
-       <Chat/>
-      <Nav title="Chat" source="git" />
-      {/* <h1 className="text-3xl font-bold underline bg-red-700">
-        hello everybody
-      </h1> */}
+       <Nav/>
       <ChatTemplates />
      
     </Router>
