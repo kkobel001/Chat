@@ -6,6 +6,7 @@ import {
   } from "@material-tailwind/react";
 import InputSearch from "components/atom/Search";
 import ChatItem from "components/atom/ChatItem";
+import MessageTemplates from "../MessageTemplates/MessageTemplates";
 
 
    
@@ -23,8 +24,9 @@ import ChatItem from "components/atom/ChatItem";
             <CardBody className="basis-3/4  ml-8 rounded-lg border-4 border-dashed border-gray-400 ">
             <CardBody>
             <Typography>ddjdjdj</Typography>
+            <MessageTemplates />
+
           </CardBody>
-         
             </CardBody>
     
     </div>
